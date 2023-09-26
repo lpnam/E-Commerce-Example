@@ -20,7 +20,7 @@ const Cart = () => {
   };
 
   const stripePromise = loadStripe(
-    "pk_test_eOTMlr8usx1ctymXqrik0ls700lQCsX2UB"
+    "pk_test_51NucOaCSkTV2V85OlFZjvcYOtPcSvKn5QTl5JuIeP56bmmLPSmzfKjjcKf2Eux6ye5HODbsHHpzmXLavbSv2xHFS00OAkMgUUP"
   );
   const handlePayment = async () => {
     try {
@@ -59,7 +59,7 @@ const Cart = () => {
         <span>SUBTOTAL</span>
         <span>${totalPrice()}</span>
       </div>
-      <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
+      <button onClick={handlePayment} target="_blank">PROCEED TO CHECKOUT</button>
       <span className="reset" onClick={() => dispatch(resetCart())}>
         Reset Cart
       </span>
